@@ -61,9 +61,3 @@ while inicio==0:
             if repetir=="no":
                 print("gracias por aver jugado ")
                 inicio=1
-
-
-
-        
-
-

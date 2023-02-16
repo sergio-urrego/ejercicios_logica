@@ -15,7 +15,6 @@ while inicio == 0 :
     while opcion1 !="no" and opcion1 != "si":
         opcion1=str(input("operacion erronea digita\nsi/no? "))
     if opcion1=="si":
-        print(numero)
         while intentos==0:
             usuario=int(input(f"digite un entero de 1 a 100\n' "))
             print("---------------------------------------------------------------------------------")
