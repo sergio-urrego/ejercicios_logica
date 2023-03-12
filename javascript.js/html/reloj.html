@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELOJ</title>
+    <link type="text/css" rel="stylesheet" href="/javascript.js/css/reloj.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="minicont">
+            <div class="fecha">
+                <p id="diasemana" class="diasemana"></p>
+                <p id="dia" class="dia"></p>
+                <p>de</p>
+                <p id="mes" class="mes"></p>
+                <p>del</p>
+                <p id="año" class="año"></p>
+            </div>
+            <div class="reloj">
+                <p id="horas"></p>
+                <p >:</p>
+                <p id="minutos"></p>
+                <p class="puntos">:</p>
+                <div class="caja_seg">
+                    <p id="segundos"></p>
+                    <p id="jornada"></p>
+                </div>
+            </div>
+            <hr>
+            <div class="cont_conometro">
+                <div class="titulo">CRONOMETRO</div>
+                <div class="tiempo" id="cronometro">00:00:00</div>
+                <div class="botones">
+                    <div class="paused" id="start" onclick="playpausa()"></div>
+                    <div class="stop" id="stop" onclick="alto()"></div>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="cont_temporizador" >
+                <div class="titulo">TEMPORIZADOR</div>
+                <div class="temp" id="temp">
+                    <span class="minutes-timer">00</span>:<span class="seconds-timer">00</span>  
+                </div>
+                <div class="botones">
+                    <div class="iniciar" id="iniciar"></div>
+                    <div class="pausar" id="pausar"></div>
+                    <div class="parar" id="parar"></div>
+                    <input type="button" value="ejecutar" class="ejec" id="ejec">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/javascript.js/javascript/reloj.js"></script>
+</body>
+</html>

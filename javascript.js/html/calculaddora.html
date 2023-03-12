@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link  tipe="text/css" rel="stylesheet" href="/javascript.js/css/calculadora.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="calculadora">
+           <center><h1>calculadora</h1></center> 
+            <div class="pantallas" >
+                <input type="text"  id="mostrar" class="ver" disabled>
+                <br>
+                <input type="text" placeholder="0" id="pantalla" class="ver" disabled>
+            </div>
+            <div class="botones">
+                <center>
+                    <div class="mini">
+                        <input type="button"  value="c" onclick="borrar1()" class="boton" id="c" >
+                        <input type="button"  value="ce" onclick="limpiar()" class="boton" id="ce" >
+                        <input type="button" value="%" onclick="display('%')" class="boton" id="porc">
+                    </div>
+                </center>
+                
+                <div><input type="button" value="7" onclick="display('7')"  class="boton">
+                    <input type="button" value="8" onclick="display('8')" class="boton">
+                    <input type="button" value="9" onclick="display('9')" class="boton">
+                    <input type="button" value="/" onclick="display('/')" class="boton">
+                </div>
+
+                <div>
+                    <input type="button" value="4" onclick="display('4')" class="boton">
+                    <input type="button" value="5" onclick="display('5')" class="boton">
+                    <input type="button" value="6" onclick="display('6')" class="boton">
+                    <input type="button" value="x" onclick="display('*')" class="boton">    
+                </div>
+
+                <div>
+                    <input type="button" value="1" onclick="display('1')" class="boton">
+                    <input type="button" value="2" onclick="display('2')" class="boton">
+                    <input type="button" value="3" onclick="display('3')" class="boton">
+                    <input type="button" value="-" onclick="display('-')" class="boton">    
+                </div>
+
+                <div>
+                    <input type="button" value="0" onclick="display('0')" class="boton">
+                    <input type="button" value="." onclick="display('.')" class="boton">
+                    <input type="button" value="=" onclick="calcular()" class="boton">
+                    <input type="button" value="+" onclick="display('+')" class="boton">
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="/javascript.js/javascript/calculadora.js"></script>
+    
+</body>
+</html>

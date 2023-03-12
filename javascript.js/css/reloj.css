@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.contenedor{
+    height: 100vh;
+    width: 100%;
+    background: #159957;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display:inline-block;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.reloj,
+.fecha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    
+}
+
+p{
+    letter-spacing: 0.3em;
+    font-size: 80px;
+    padding: 5px 0;
+}
+
+#segundos,
+#jornada{
+    padding: 1px;
+    letter-spacing: 0px;
+    font-size: 24px;
+    display: block;
+}
+
+.puntos{
+    letter-spacing: 7px;
+}
+
+.fecha p{
+    margin-right: 10px;
+    letter-spacing: 4px;
+    font-size: 20px;
+    
+}
+.fecha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    color: #ffff;
+}
+
+.cont_cronometro{
+    display: flex;
+    justify-content: center;
+
+}
+.paused{
+    height: 20px;
+    border-width:10px 0px 10px 15px ;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 15px;
+    border-color: transparent transparent transparent #ffff;
+    transition: 100ms all ease;
+    will-change:border-whidth;
+    border-style: solid;
+    
+}
+
+.running{
+    border-style: double;
+    border-width: 0px 0px 0px 10px;
+}
+.stop{
+    background-color: #ffff;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+.tiempo{
+    color: #ffff;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.iniciar{
+    height: 20px;
+    border-width:10px 0px 10px 15px ;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 15px;
+    border-color: transparent transparent transparent #ffff;
+    transition: 100ms all ease;
+    will-change:border-whidth;
+    border-style: solid;
+}
+
+.pausar{
+    height: 20px;
+    border-style: double;
+    color: #ffff;
+    border-width: 0px 0px 0px 10px;
+    margin-right: 10px;
+}
+.parar{
+    background-color: #ffff;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+
+.temp{
+    color: #ffff;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.ejec{
+    background-color: transparent;
+    color: #ffff;
+    font-size: 20px;
+    border-color: transparent;
+    margin-left: 10px;
+}
